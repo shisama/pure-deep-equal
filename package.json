@@ -1,8 +1,16 @@
 {
   "name": "pure-deep-equal",
   "version": "0.1.0",
-  "description": "overwrite your component's shouldComponentUpdate to compare deeply",
+  "description": "overwrite your react component's shouldComponentUpdate to compare deeply",
   "main": "index.js",
+  "homepage": "https://github.com/shisama/pure-deep-equal",
+  "bugs": {
+    "url": "https://github.com/shisama/pure-deep-equal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shisama/pure-deep-equal.git"
+  },
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.22.0",
@@ -21,6 +29,7 @@
     "test": "nyc ava"
   },
   "keywords": [
+    "react",
     "purecomponent",
     "deep-equal",
     "deep-compare",
