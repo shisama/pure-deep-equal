@@ -1,0 +1,69 @@
+{
+  "name": "pure-deep-equal",
+  "version": "0.1.0",
+  "description": "overwrite your component's shouldComponentUpdate to compare deeply",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "enzyme": "^2.9.1",
+    "nyc": "^11.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "sinon": "^3.2.1"
+  },
+  "scripts": {
+    "test": "nyc ava"
+  },
+  "keywords": [
+    "purecomponent",
+    "deep-equal",
+    "deep-compare",
+    "shouldComponentUpdate"
+  ],
+  "author": "Masashi Hirano (https://github.com/shisama)",
+  "license": "MIT",
+  "ava": {
+    "files": "**/*.test.js",
+    "require": [
+      "babel-register"
+    ],
+    "babel": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ],
+        "react"
+      ],
+      "plugins": [
+        "transform-decorators-legacy"
+      ]
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "react"
+    ],
+    "plugins": [
+      "transform-decorators-legacy"
+    ]
+  }
+}
