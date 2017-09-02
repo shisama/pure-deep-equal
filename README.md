@@ -9,10 +9,10 @@ overwrite your react component's shouldComponentUpdate to compare deeply
 
 ## Why?
 React.PureComponent is very useful to make your react application faster. 
-However, since React.PureComponent use 'shallow comparison', render method is not invoked when value of Object or array in props (or state) is changed.
-I think it may make some bugs and hope to compare props or state deeply.
-So, I developed this. That's more, I made this library as decorator because I hope to apply 'deep comparison' simply to existing codes.
-I feel happy that this library helps you. Thanks.
+However, since React.PureComponent uses 'shallow comparison', render method is not invoked when values of Object or array in props or state are changed.
+I think it may make some bugs and I hope to compare props or state deeply.
+So, I developed this. That's more, I made this to use it as decorator because I hope to apply 'deep comparison' simply to existing codes.
+I hope that this library will help you. Thanks;)
 
 ## Install
 ```
