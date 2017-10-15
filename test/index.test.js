@@ -1,7 +1,10 @@
 import test from 'ava';
 import React from 'react';
-import {shallow} from 'enzyme';
+import {configure, shallow} from 'enzyme';
 import sinon from 'sinon';
+import Adaper from 'enzyme-adapter-react-16';
+
+configure({adapter: new Adaper()});
 
 import Test from './component';
 
